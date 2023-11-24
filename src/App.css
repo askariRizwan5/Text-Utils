@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+.blink-content{
+  animation: animate 1.8s linear infinite;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +40,15 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes animate{  
+  0%{  
+      opacity: 0;  
+  }  
+  50%{  
+      opacity: 0.6;  
+  }  
+  100%{  
+      opacity: 0;  
+  }  
+  }  
