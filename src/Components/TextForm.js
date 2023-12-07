@@ -30,7 +30,9 @@ export default function TextForm(props) {
 
         setText(capString);
     }
-
+    const clearText = () => {
+        setText("")
+    }
 
     return (
         <>
@@ -44,6 +46,7 @@ export default function TextForm(props) {
                 <button type="button" className="btn btn-secondary mx-2" onClick={handleUpClick}>Convert to UpperCase</button>
                 <button type="button" className="btn btn-secondary mx-2" onClick={handleLowerClick}>Convert to LowerCase</button>
                 <button type="button" className="btn btn-secondary" onClick={() => capitalizeFirst(text)}>Capitalize First Word</button>
+                <button type="button" className="btn btn-secondary" onClick={() => clearText(text)}>Clear Text</button>
 
             </div>
             <div className="container my-2">
